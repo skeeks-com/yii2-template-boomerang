@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html>  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Boomerang 2 - MultiPurpose Template</title>
+
+    <!-- Essential styles -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css"> 
+    <link rel="stylesheet" href="assets/fancybox/jquery.fancybox.css?v=2.1.5" media="screen"> 
+     
+    <!-- Boomerang styles -->
+        <link id="wpStylesheet" type="text/css" href="css/global-style.css" rel="stylesheet" media="screen">
+        
+
+    <!-- Favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/png">
+
+    <!-- Assets -->
+    <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="assets/sky-forms/css/sky-forms.css">    
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="assets/sky-forms/css/sky-forms-ie8.css">
+    <![endif]-->
+
+    <!-- Required JS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+    <!-- Page scripts -->
+    
+</head>
+<body>
+<!-- MODALS -->
+
+<!-- MOBILE MENU - Option 2 -->
+<section id="navMobile" class="aside-menu left">
+    <form class="form-horizontal form-search">
+        <div class="input-group">
+            <input type="search" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
+                <button id="btnHideMobileNav" class="btn btn-close" type="button" title="Hide sidebar"><i class="fa fa-times"></i></button>
+            </span>
+        </div>
+    </form>
+    <div id="dl-menu" class="dl-menuwrapper">
+        <ul class="dl-menu"></ul>
+    </div>
+</section> 
+
+<!-- SLIDEBAR -->
+<section id="asideMenu" class="aside-menu right">
+    <form class="form-horizontal form-search">
+        <div class="input-group">
+            <input type="search" class="form-control" placeholder="Search..." />
+            <span class="input-group-btn">
+                <button id="btnHideAsideMenu" class="btn btn-close" type="button" title="Hide sidebar"><i class="fa fa-times"></i></button>
+            </span>
+        </div>
+    </form>
+    
+    <h5 class="side-section-title">Optional sidebar menu</h5>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About us</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="#">Work</a>
+            </li>
+            <li>
+                <a href="#">Online shop</a>
+            </li>
+        </ul>
+    </div>
+    
+    <h5 class="side-section-title">Social media</h5>
+    <div class="social-media">
+        <a href="#"><i class="fa fa-facebook facebook"></i></a>
+        <a href="#"><i class="fa fa-google-plus google"></i></a>
+        <a href="#"><i class="fa fa-twitter twitter"></i></a>
+    </div>
+    
+    <h5 class="side-section-title">Contact information</h5>
+    <div class="contact-info">
+        <h5>Address</h5>
+        <p>5th Avenue, New York - United States</p>
+        
+        <h5>Email</h5>
+        <p>hello@webpixels.ro</p>
+        
+        <h5>Phone</h5>
+        <p>+10 724 1234 567</p>
+    </div>
+</section>
+
+<!-- MAIN WRAPPER -->
+<div class="body-wrap">
+    <!-- This section is only for demonstration purpose only. Check out the docs for more informations" -->
+    <div id="divStyleSwitcher" class="style-switcher-slidebar">
+    <a href="#" id="cmdShowStyleSwitcher" class="open-panel hidden-xs"><i class="fa fa-cog"></i></a>
+    <div class="switch-panel">
+        <h3>Boomerang - Style Builder</h3>
+        <div class="panel-section">
+            <h4 class="title text-uppercase font-normal">Layout options</h4>
+
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="form-group">
+                        <label>I prefer it:</label> 
+                        <select id="cmbLayoutStyle" class="form-control">
+                            <option value="1">Fluid</option>
+                            <option value="2">Boxed</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="form-group">
+                        <label></label>
+                        <select id="cmbLayoutColor" class="form-control">
+                            <option value="1">Light</option>
+                            <option value="2">Dark</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <label class="mt-10">Predefined body backgrounds</label>
+            <span class="clearfix"></span>
+            <span id="cmbBodyBg" class="color-switch">
+                <a href="#" id="cmdBodyBg1" class="body-bg-1 ttip" data-toggle="bottom" title="Solid color"></a>
+                <a href="#" id="cmdBodyBg2" class="body-bg-2 ttip" data-toggle="bottom" title="Black Lozenge"></a>
+                <a href="#" id="cmdBodyBg3" class="body-bg-3 ttip" data-toggle="bottom" title="Squairy Light"></a>
+                <a href="#" id="cmdBodyBg4" class="body-bg-4 ttip" data-toggle="bottom" title="Dark Dotted"></a>
+                <a href="#" id="cmdBodyBg5" class="body-bg-5 ttip" data-toggle="bottom" title="Skulls"></a>
+                <a href="#" id="cmdBodyBg6" class="body-bg-6 ttip" data-toggle="bottom" title="Image Background - 1"></a>
+                <a href="#" id="cmdBodyBg7" class="body-bg-7 ttip" data-toggle="bottom" title="Image Background - 2"></a>
+                <span class="clearfix"></span>
+            </span>
+
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="form-group">
+                        <label>Section title:</label>
+                        <select id="cmbSectionTitleStyle" class="form-control">
+                            <option value="1">Style 1</option>
+                            <option value="2">Style 2</option>
+                            <option value="3">Style 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="form-group">
+                        <label>Color:</label>
+                        <select id="cmbSectionTitleColor" class="form-control" disabled="disabled">
+                            <option value="1">Base</option>
+                            <option value="2">Alt Base</option>
+                            <option value="3">Light</option>
+                            <option value="4">Dark</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>   
+
+        <hr> 
+
+        <div class="panel-section">
+            <h4 class="title text-uppercase font-normal">Header options</h4> 
+
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="form-group">
+                        <label>Header:</label>
+                        <select id="cmbHeaderStyle" class="form-control">
+                            <option value="2">Header 1: Default navbar</option>
+                            <option value="3">Header 2: Default navbar + Top header</option>
+                            <option value="1">Header 3: Header + Navbar</option>
+                            <option value="4">Header 4: Cover</option>
+<!-- 
+                            <option value="5">Header 1: Default + Mobile nav 2</option>
+                            <option value="6">Header 2: Default + Top header + Mobile nav 2</option>
+                            <option value="7">Header 3: Header + Navbar + Mobile nav 2</option>
+                            <option value="8">Header 4: Cover</option> -->
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="form-group">
+                        <label>Top header color:</label>
+                        <select id="cmbTopHeaderColor" class="form-control" disabled="disabled">
+                            <option value="1">Light</option>
+                            <option value="2">Dark</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>     
+
+        <div class="panel-section">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="form-group">
+                        <label>Nav shadow</label>
+                        <select id="cmbNavShadow" class="form-control">
+                            <option value="1">No</option>
+                            <option value="2">Yes</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="form-group">
+                        <label>Dropdown arrow:</label>
+                        <select id="cmbNavDropdownArrow" class="form-control">
+                            <option value="2">Yes</option>
+                            <option value="1">No</option>
+                        </select>
+                    </div>
+                </div>          
+            </div>
+        </div>   
+
+        <hr>
+
+        <div class="panel-section">
+            <h4 class="title text-uppercase font-normal">Color options</h4>
+
+            <label>Predefined colors</label>
+            <span class="clearfix"></span>
+            <span class="color-switch">
+                <a href="#" id="cmdSchemeRed" class="color-red" title="Red">Red</a>
+                <a href="#" id="cmdSchemeViolet" class="color-violet" title="Violet">Violet</a>
+                <a href="#" id="cmdSchemeBlue" class="color-blue" title="Blue">Blue</a>
+                <a href="#" id="cmdSchemeGreen" class="color-green" title="Green">Green</a>
+                <a href="#" id="cmdSchemeYellow" class="color-yellow" title="Yellow">Yellow</a>
+                <a href="#" id="cmdSchemeOrange" class="color-orange" title="Orange">Orange</a>
+            </span>
+        </div>
+
+        <hr>
+
+        <div class="panel-section">
+            <h4 class="title">
+                <span class="text-uppercase font-normal">Special</span> 
+                <a href="#" class="pop" title="About customization" data-content="We created some examples that show you the multitude of options you have so you make this template as you wish. <br><br>Customization is very easy and it is made in only one file.">
+                    <i class="fa fa-question-circle"></i>
+                </a>
+                <label class="badge base pull-right">New</label>
+            </h4>
+
+            <label>Predefined schemes</label>
+            <span class="clearfix"></span>
+            <span class="color-switch">
+                <a href="#" id="cmdSchemeBW" class="color-bw ttip" data-toggle="top" title="Black & White">Black and white</a>
+                <a href="#" id="cmdSchemeDark" class="color-dark ttip" data-toggle="top" title="Dark">Dark</a>
+                <a href="#" id="cmdSchemeFlat" class="color-flat ttip" data-toggle="top" title="Flat">Flat</a>
+            </span>
+
+        </div>
+
+        <div class="panel-section mt-15 hide">
+            <a href="#"><span>Reset all applied styles</span></a>
+            <br><br>
+        </div>
+
+    </div>
+</div>
+            <!-- HEADER -->
+        <div id="divHeaderWrapper">
+            <header class="header-standard-2">     
+    <!-- MAIN NAV -->
+    <div class="navbar navbar-wp navbar-arrow mega-nav" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle navbar-toggle-aside-menu">
+                    <i class="fa fa-outdent icon-custom"></i>
+                </button>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <i class="fa fa-bars icon-custom"></i>
+                </button>
+
+                <a class="navbar-brand" href="index.html" title="Boomerang | One template. Infinite solutions">
+                    <img src="images/boomerang-logo-black.png" alt="Boomerang | One template. Infinite solutions">
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden-md hidden-lg">
+                        <div class="bg-light-gray">
+                            <form class="form-horizontal form-light p-15" role="form">
+                                <div class="input-group input-group-lg">
+                                    <input type="text" class="form-control" placeholder="I want to find ...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-white" type="button">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="dropdown dropdown-meganav mega-dropdown-fluid">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-3 mega-nav-section-wr">
+                                        <div class="mega-nav-section">
+                                            <img src="images/prv/wk-big-img-9.jpg" class="img-responsive img-thumbnail hidden-xs hidden-sm" alt="">
+                                            <h3 class="mega-nav-section-title">Business &amp; Other</h3>
+                                            <ul class="mega-nav-ul">
+                                                <li><a href="homepage-business-1.html">Homepage: Business 1</a></li>
+                                                <li><a href="homepage-business-2.html">Homepage: Business 2</a></li>
+                                                <li><a href="homepage-cover.html">Homepage: Cover</a></li>
+                                                <li><a href="homepage-shop-1.html">Homepage: Boomerang Shop</a></li>
+                                                <li><a href="homepage-fashion-1.html">Homepage: Fashion Shop</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mega-nav-section-wr">
+                                        <div class="mega-nav-section"> 
+                                            <img src="images/prv/wk-big-img-10.jpg" class="img-responsive img-thumbnail hidden-xs hidden-sm hidden-xs hidden-sm" alt="">
+                                            <h3 class="mega-nav-section-title">Agencies &amp; Creatives</h3>
+                                            <ul class="mega-nav-ul">
+                                                <li><a href="homepage-agency-1.html">Homepage: Agency</a></li>
+                                                <li><a href="homepage-estate-1.html">Homepage: Real Estate</a></li>
+                                                <li><a href="homepage-jobs-1.html">Homepage: Jobs</a></li>
+                                                <li><a href="homepage-models-1.html">Homepage: Models</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mega-nav-section-wr">
+                                        <div class="mega-nav-section">
+                                            <img src="images/prv/wk-big-img-11.jpg" class="img-responsive img-thumbnail hidden-xs hidden-sm" alt="">
+                                            <h3 class="mega-nav-section-title">News &amp; Media</h3>
+                                            <ul class="mega-nav-ul">
+                                                <li><a href="homepage-magazine-1.html">Homepage: Magazine</a></li>
+                                                <li><a href="homepage-newspaper-1.html">Homepage: Newspaper</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="mega-nav-section">
+                                            <img src="images/prv/wk-big-img-12.jpg" class="img-responsive img-thumbnail hidden-xs hidden-sm" alt="">
+                                            <h3 class="mega-nav-section-title">Institutions</h3>
+                                            <ul class="mega-nav-ul">
+                                                <li><a href="homepage-school-1.html">Homepage: School</a></li>
+                                                <li><a href="homepage-medical-1.html">Homepage: Medical</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">About us</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="about-1.html">About us: 1</a></li>
+                                    <li><a tabindex="-1" href="about-2.html">About us: 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Team</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="team-list-1.html">Team members: 1</a></li>
+                                    <li><a tabindex="-1" href="team-list-2.html">Team members: 2</a></li>
+                                    <li><a tabindex="-1" href="team-member-1.html">Single team member: 1</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="services-1.html">Services: 1</a></li>
+                                    <li><a tabindex="-1" href="services-2.html">Services: 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Jobs</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="jobs-listing-1.html">Jobs listing: 1</a></li>
+                                    <li><a tabindex="-1" href="job-description-1.html">Job description</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Pricing plans</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="pricing-1.html">Pricing: 1</a></li>
+                                    <li><a tabindex="-1" href="pricing-2.html">Pricing: 2</a></li>
+                                    <li><a tabindex="-1" href="pricing-3.html">Pricing: 3</a></li>
+                                    <li><a tabindex="-1" href="pricing-4.html">Pricing: 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Sign in</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="sign-in-1.html">Sign in: 1</a></li>
+                                    <li><a tabindex="-1" href="sign-in-2.html">Sign in: 2</a></li>
+                                    <li><a tabindex="-1" href="sign-in-3.html">Sign in: 3 (translucent)</a></li>
+                                    <li><a tabindex="-1" href="sign-in-4.html">Sign in variations</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Sign up</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="sign-up-1.html">Sign up: 1</a></li>
+                                    <li><a tabindex="-1" href="sign-up-2.html">Sign up: 2</a></li>
+                                    <li><a tabindex="-1" href="sign-up-3.html">Sign up: 3 (translucent)</a></li>
+                                    <li><a tabindex="-1" href="sign-up-4.html">Sign up variations</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Contact</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="contact-1.html">Contact: Fluid</a></li>
+                                    <li><a tabindex="-1" href="contact-2.html">Contact: Two cols</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="timeline.html">Timeline</a></li>
+                            <li><a href="listings.html">Listings</a></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Helpful pages</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="404.html">Error 404</a></li>
+                                    <li><a tabindex="-1" href="faq.html">FAQ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Real Estate</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="homepage-estate-1.html">Homepage</a></li>
+                                    <li><a tabindex="-1" href="estate-listing-1.html">Listing: List </a></li>
+                                    <li><a tabindex="-1" href="estate-listing-2.html">Listing: Grid</a></li>
+                                    <li><a tabindex="-1" href="estate-property.html">Property</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Jobs</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="homepage-jobs-1.html">Homepage</a></li>
+                                    <li><a tabindex="-1" href="jobs-listing-1.html">Jobs listing</a></li>
+                                    <li><a tabindex="-1" href="job-description-1.html">Job description</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Magazine &amp; Newspaper</a>
+                                <ul class="dropdown-menu">
+                                    <li class="divider">Magazine</li>
+                                    <li><a tabindex="-1" href="homepage-magazine-1.html">Homepage</a></li>
+                                    <li><a tabindex="-1" href="magazine-listing-1.html">Category listing: List</a></li>
+                                    <li><a tabindex="-1" href="magazine-listing-2.html">Category listing: Grid</a></li>
+                                    <li><a tabindex="-1" href="magazine-article-1.html">Magazine article</a></li>
+                                    <li class="divider">Newspaper</li>
+                                    <li><a tabindex="-1" href="homepage-newspaper-1.html">Newspaper homepage</a></li>
+                                    <li><a tabindex="-1" href="newspaper-listing-1.html">Newspaper listing: List</a></li>
+                                    <li><a tabindex="-1" href="newspaper-listing-2.html">Newspaper listing: Grid</a></li>
+                                    <li><a tabindex="-1" href="magazine-article-1.html">Newspaper article</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Newsletter template</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu"><a tabindex="-1" href="#">Default</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="newsletter/default/newsletter-default-1.html" target="_blank">Newsletter Default: Red</a></li>
+                                            <li><a tabindex="-1" href="newsletter/default/newsletter-default-2.html" target="_blank">Newsletter Default: Purple</a></li>
+                                            <li><a tabindex="-1" href="newsletter/default/newsletter-default-3.html" target="_blank">Newsletter Default: Blue</a></li>
+                                            <li><a tabindex="-1" href="newsletter/default/newsletter-default-4.html" target="_blank">Newsletter Default: Green</a></li>
+                                            <li><a tabindex="-1" href="newsletter/default/newsletter-default-5.html" target="_blank">Newsletter Default: Yellow</a></li>
+                                            <li><a tabindex="-1" href="newsletter/default/newsletter-default-6.html" target="_blank">Newsletter Default: Orange</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu"><a tabindex="-1" href="#">Flat</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="newsletter/flat/newsletter-flat-1.html" target="_blank">Newsletter Flat: Alizarin</a></li>
+                                            <li><a tabindex="-1" href="newsletter/flat/newsletter-flat-2.html" target="_blank">Newsletter Flat: Amethyst</a></li>
+                                            <li><a tabindex="-1" href="newsletter/flat/newsletter-flat-3.html" target="_blank">Newsletter Flat: Belize Hole</a></li>
+                                            <li><a tabindex="-1" href="newsletter/flat/newsletter-flat-4.html" target="_blank">Newsletter Flat: Emerald</a></li>
+                                            <li><a tabindex="-1" href="newsletter/flat/newsletter-flat-5.html" target="_blank">Newsletter Flat: Sun Flower</a></li>
+                                            <li><a tabindex="-1" href="newsletter/flat/newsletter-flat-6.html" target="_blank">Newsletter Flat: Carrot</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu"><a tabindex="-1" href="#">Shop</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="newsletter/shop/newsletter-shop-1.html" target="_blank">Newsletter Shop: Red</a></li>
+                                            <li><a tabindex="-1" href="newsletter/shop/newsletter-shop-2.html" target="_blank">Newsletter Shop: Purple</a></li>
+                                            <li><a tabindex="-1" href="newsletter/shop/newsletter-shop-3.html" target="_blank">Newsletter Shop: Blue</a></li>
+                                            <li><a tabindex="-1" href="newsletter/shop/newsletter-shop-4.html" target="_blank">Newsletter Shop: Green</a></li>
+                                            <li><a tabindex="-1" href="newsletter/shop/newsletter-shop-5.html" target="_blank">Newsletter Shop: Yellow</a></li>
+                                            <li><a tabindex="-1" href="newsletter/shop/newsletter-shop-6.html" target="_blank">Newsletter Shop: Orange</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Components</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="wp-accordion.html">Accordion</a></li>
+                                    <li><a tabindex="-1" href="wp-alerts.html">Alerts</a></li>
+                                    <li><a tabindex="-1" href="wp-badges.html">Badges</a></li>
+                                    <li><a tabindex="-1" href="wp-blocks-default.html">Blocks</a></li>
+                                    <li><a tabindex="-1" href="wp-buttons-boomerang.html">Buttons</a></li>
+                                    <li><a tabindex="-1" href="wp-callouts.html">Callouts</a></li>
+                                    <li><a tabindex="-1" href="wp-carousels.html">Carousels</a></li>
+                                    <li><a tabindex="-1" href="wp-counters.html">Counters</a></li>
+                                    <li><a tabindex="-1" href="wp-pagination.html">Pagination</a></li>
+                                    <li><a tabindex="-1" href="wp-progress-bars.html">Progress bars</a></li>
+                                    <li><a tabindex="-1" href="wp-range-sliders.html">Range sliders</a></li>
+                                    <li><a tabindex="-1" href="wp-rating-stars.html">Rating stars</a></li>
+                                    <li><a tabindex="-1" href="wp-ribbons.html">Ribbons</a></li>
+                                    <li><a tabindex="-1" href="wp-tabs.html">Tabs</a></li>
+                                </ul>
+                            </li> 
+                            <li><a href="wp-typography-general.html">Typography</a></li>
+                            <li><a href="wp-features.html">Features</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-meganav mega-dropdown-fluid">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+                        <ul class="dropdown-menu">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-3 mega-nav-section-wr">
+                                        <div class="mega-nav-section">
+                                            <h3 class="mega-nav-section-title">Gallery with no space</h3>
+                                            <ul class="mega-nav-ul">
+                                                <li><a href="portfolio-two-col-boxed.html">Two columns grid: Boxed</a></li>
+                                                <li><a href="portfolio-three-col-boxed.html">Three columns grid: Boxed</a></li>
+                                                <li><a href="portfolio-four-col-boxed.html">Four columns grid: Boxed</a></li>
+                                                <li><a href="portfolio-two-col-fluid.html">Two columns grid: Fluid</a></li>
+                                                <li><a href="portfolio-three-col-fluid.html">Three columns grid: Fluid</a></li>
+                                                <li><a href="portfolio-four-col-fluid.html">Four columns grid: Fluid</a></li>
+                                                <li><a href="portfolio-five-col-fluid.html">Five columns grid: Fluid</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mega-nav-section-wr">
+                                        <div class="mega-nav-section">
+                                            <h3 class="mega-nav-section-title">Gallery with space n/text</h3>
+                                            <ul class="mega-nav-ul">
+                                                <li><a href="portfolio-two-col-space-boxed.html">Two columns grid: Boxed</a></li>
+                                                <li><a href="portfolio-three-col-space-boxed.html">Three columns grid: Boxed</a></li>
+                                                <li><a href="portfolio-four-col-space-boxed.html">Four columns grid: Boxed</a></li>
+                                                <li><a href="portfolio-two-col-space-fluid.html">Two columns grid: Fluid</a></li>
+                                                <li><a href="portfolio-three-col-space-fluid.html">Three columns grid: Fluid</a></li>
+                                                <li><a href="portfolio-four-col-space-fluid.html">Four columns grid: Fluid</a></li> 
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mega-nav-section-wr">
+                                        <div class="mega-nav-section">
+                                            <h3 class="mega-nav-section-title">Gallery with space w/ text</h3>
+                                            <ul class="mega-nav-ul">
+                                                <li><a href="portfolio-two-col-text-boxed.html">Two columns grid with text</a></li>
+                                                <li><a href="portfolio-three-col-text-boxed.html">Three columns grid with text</a></li>
+                                                <li><a href="portfolio-four-col-text-boxed.html">Four columns grid with text</a></li>
+                                                <li><a href="portfolio-two-col-header-boxed.html">Two columns grid with header</a></li>
+                                                <li><a href="portfolio-three-col-header-boxed.html">Three columns grid with header</a></li> 
+                                                <li><a href="portfolio-four-col-header-boxed.html">Four columns grid with header</a></li> 
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="mega-nav-section">
+                                            <h3 class="mega-nav-section-title">Single project</h3>
+                                            <ul class="mega-nav-ul">
+                                                <li><a href="portfolio-single-project-horizontal.html">Single project: Horizontal</a></li>
+                                                <li><a href="portfolio-single-project-vertical.html">Single project: Vertical</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog-grid-1.html">Blog: Grid one column</a></li>
+                            <li><a href="blog-grid-2.html">Blog: Grid two columns</a></li>
+                            <li><a href="blog-list-1.html">Blog: List one</a></li>
+                            <li><a href="blog-fluid-1.html">Blog: Full width </a></li>
+                            <li><a href="blog-masonry-1.html">Blog: Masonry w/ sidebar</a></li>
+                            <li><a href="blog-masonry-2.html">Blog: Masonry three columns</a></li>
+                            <li><a href="blog-masonry-3.html">Blog: Masonry four colums</a></li>
+                            <li><a href="blog-post-1.html">Post: Standard</a></li>
+                            <li><a href="blog-post-2.html">Post: Full width</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="homepage-shop-1.html">Homepage</a></li>
+                            <li><a href="shop-product-list-1.html">Products: Full width</a></li>
+                            <li><a href="shop-product-list-2.html">Products: With sidebar</a></li>
+                            <li><a href="shop-product-single.html">Single product</a></li>
+                            <li><a href="shop-cart.html">Cart</a></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Checkout progress</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="shop-checkout-method.html">Checkout: Login-Register</a></li>
+                                    <li><a tabindex="-1" href="shop-checkout-shipping.html">Checkout: Shipping</a></li>
+                                    <li><a tabindex="-1" href="shop-checkout-payment.html">Checkout: Payment method</a></li>
+                                    <li><a tabindex="-1" href="shop-checkout-order.html">Checkout: Order review</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Invoice</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="invoice-1.html">Invoice: New</a></li>
+                                    <li><a tabindex="-1" href="invoice-2.html">Invoice: Paid</a></li>
+                                    <li><a tabindex="-1" href="invoice-3.html">Invoice: Unpaid</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="user-account.html">User account</a></li>                            
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-aux animate-click" data-animate-in="animated bounceInUp" data-animate-out="animated fadeOutDown" style="z-index:500;">
+                        <a href="#" class="dropdown-form-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-user animate-wr">
+                            <li id="dropdownForm">
+                                <div class="dropdown-form">
+                                    <form class="form-horizontal form-light p-15" role="form">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="I want to find ...">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-base" type="button">Go</button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-aux">
+                        <a href="#" id="cmdAsideMenu" class="dropdown-toggle dropdown-form-toggle" title="Open slidebar">
+                            <i class="fa fa-outdent"></i>
+                        </a>
+                    </li>
+                </ul>
+               
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</header>        </div>
+
+        <!-- Optional header components (ex: slider) -->
+         
+    
+    <!-- MAIN CONTENT -->
+        <div class="pg-opt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Magazine article</h2>
+                </div>
+                <div class="col-md-6">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li class="active">Magazine article</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="slice bg-white">
+        <div class="wp-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="wp-block article post">
+                                    <div class="figure">
+                                        <!-- Article title -->
+                                        <h2 class="article-title">God is an awesome mathematician and physicist</h2>
+                                        <div class="inline-tags mb-20">
+                                            <span class="label base">General</span>
+                                            <span class="label base">Websites</span>
+                                            <span class="label base">Bootstrap</span>
+                                            <span class="label base">Responsive</span>
+                                        </div>  
+                                        <!-- Article image -->
+                                        <div class="article-image">
+                                            <img src="images/prv/magazine/magazine-7.jpg" alt="">  
+                                        </div>
+                                        <div>
+                                            <!-- Article content -->
+                                            <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.
+                                            Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus...
+                                            </p>
+                                            <p>
+                                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
+                                            </p>
+                                            <p>
+                                            Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                            </p>
+                                            <p class="highlight">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.
+                                            Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros.
+                                            </p>
+                                            <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna. Sed et quam lacus. 
+                                            </p>
+                                            <p>
+                                            Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                            </p>
+                                            <blockquote class="blockquote-1">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                            </blockquote>
+                                            <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.
+                                            Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus...
+                                            </p>
+                                        </div>
+                                        <!-- Meta info -->
+                                        <div class="meta-info">
+                                            <span>
+                                                <strong>Written by:</strong> Alexander Smith
+                                            </span>
+                                            <span>
+                                                <strong>Date:</strong>
+                                                <a href="#">August 23th, 2014</a>
+                                            </span>
+                                        </div>
+                                        <!-- Social buttons -->
+                                        <ul class="rrssb-buttons clearfix mt-20 mb-20">
+                                            <li class="email">
+                                                <a href="mailto:?subject=Check%20out%20how%20this%20incredible%20responsive%20template:%20Boomerang%202&amp;body=https%3A%2F%2Fwrapbootstrap.com/theme/boomerang-multipurpose-template-WB021609D">
+                                                    <span class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve"><g><path d="M20.111 26.147c-2.336 1.051-4.361 1.401-7.125 1.401c-6.462 0-12.146-4.633-12.146-12.265 c0-7.94 5.762-14.833 14.561-14.833c6.853 0 11.8 4.7 11.8 11.252c0 5.684-3.194 9.265-7.399 9.3 c-1.829 0-3.153-0.934-3.347-2.997h-0.077c-1.208 1.986-2.96 2.997-5.023 2.997c-2.532 0-4.361-1.868-4.361-5.062 c0-4.749 3.504-9.071 9.111-9.071c1.713 0 3.7 0.4 4.6 0.973l-1.169 7.203c-0.388 2.298-0.116 3.3 1 3.4 c1.673 0 3.773-2.102 3.773-6.58c0-5.061-3.27-8.994-9.303-8.994c-5.957 0-11.175 4.673-11.175 12.1 c0 6.5 4.2 10.2 10 10.201c1.986 0 4.089-0.43 5.646-1.245L20.111 26.147z M16.646 10.1 c-0.311-0.078-0.701-0.155-1.207-0.155c-2.571 0-4.595 2.53-4.595 5.529c0 1.5 0.7 2.4 1.9 2.4 c1.441 0 2.959-1.828 3.311-4.087L16.646 10.068z"/></g></svg>
+                                                    </span>
+                                                    <span class="text">email</span>
+                                                </a>
+                                            </li>
+                                            <li class="facebook">
+                                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://wrapbootstrap.com/theme/boomerang-multipurpose-template-WB021609D" class="popup">
+                                                    <span class="icon">
+                                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
+                                                            <path d="M27.825,4.783c0-2.427-2.182-4.608-4.608-4.608H4.783c-2.422,0-4.608,2.182-4.608,4.608v18.434
+                                                                c0,2.427,2.181,4.608,4.608,4.608H14V17.379h-3.379v-4.608H14v-1.795c0-3.089,2.335-5.885,5.192-5.885h3.718v4.608h-3.726
+                                                                c-0.408,0-0.884,0.492-0.884,1.236v1.836h4.609v4.608h-4.609v10.446h4.916c2.422,0,4.608-2.188,4.608-4.608V4.783z"/>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="text">facebook</span>
+                                                </a>
+                                            </li>
+                                            <li class="twitter">
+                                                <a href="http://twitter.com/home?status=Boomerang 2 - MultiPurpose Website Template is a responsive website template based on the well known Bootstrap framework. Easy to work with, easy to customize and infinite solutions that can be implemented in your project are just a few attributes that recommend Boomerang to be one of the most complete template%20https://wrapbootstrap.com/theme/boomerang-multipurpose-template-WB021609D" class="popup">
+                                                    <span class="icon">
+                                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                             width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
+                                                        <path d="M24.253,8.756C24.689,17.08,18.297,24.182,9.97,24.62c-3.122,0.162-6.219-0.646-8.861-2.32
+                                                            c2.703,0.179,5.376-0.648,7.508-2.321c-2.072-0.247-3.818-1.661-4.489-3.638c0.801,0.128,1.62,0.076,2.399-0.155
+                                                            C4.045,15.72,2.215,13.6,2.115,11.077c0.688,0.275,1.426,0.407,2.168,0.386c-2.135-1.65-2.729-4.621-1.394-6.965
+                                                            C5.575,7.816,9.54,9.84,13.803,10.071c-0.842-2.739,0.694-5.64,3.434-6.482c2.018-0.623,4.212,0.044,5.546,1.683
+                                                            c1.186-0.213,2.318-0.662,3.329-1.317c-0.385,1.256-1.247,2.312-2.399,2.942c1.048-0.106,2.069-0.394,3.019-0.851
+                                                            C26.275,7.229,25.39,8.196,24.253,8.756z"/>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="text">twitter</span>
+                                                </a>
+                                            </li>
+                                            <li class="googleplus" data-initwidth="14.285714285714286" data-size="52" style="width: 14.285714285714286%;">
+                                                <!-- Replace href with your meta and URL information.  -->
+                                                <a href="https://plus.google.com/share?url=Boomerang 2 - MultiPurpose Website Template is a responsive website template based on the well known Bootstrap framework. Easy to work with, easy to customize and infinite solutions that can be implemented in your project are just a few attributes that recommend Boomerang to be one of the most complete template%20https://wrapbootstrap.com/theme/boomerang-multipurpose-template-WB021609D" class="popup">
+                                                    <span class="icon">
+                                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
+                                                            <g>
+                                                                <g>
+                                                                    <path d="M14.703,15.854l-1.219-0.948c-0.372-0.308-0.88-0.715-0.88-1.459c0-0.748,0.508-1.223,0.95-1.663
+                                                                        c1.42-1.119,2.839-2.309,2.839-4.817c0-2.58-1.621-3.937-2.399-4.581h2.097l2.202-1.383h-6.67c-1.83,0-4.467,0.433-6.398,2.027
+                                                                        C3.768,4.287,3.059,6.018,3.059,7.576c0,2.634,2.022,5.328,5.604,5.328c0.339,0,0.71-0.033,1.083-0.068
+                                                                        c-0.167,0.408-0.336,0.748-0.336,1.324c0,1.04,0.551,1.685,1.011,2.297c-1.524,0.104-4.37,0.273-6.467,1.562
+                                                                        c-1.998,1.188-2.605,2.916-2.605,4.137c0,2.512,2.358,4.84,7.289,4.84c5.822,0,8.904-3.223,8.904-6.41
+                                                                        c0.008-2.327-1.359-3.489-2.829-4.731H14.703z M10.269,11.951c-2.912,0-4.231-3.765-4.231-6.037c0-0.884,0.168-1.797,0.744-2.511
+                                                                        c0.543-0.679,1.489-1.12,2.372-1.12c2.807,0,4.256,3.798,4.256,6.242c0,0.612-0.067,1.694-0.845,2.478
+                                                                        c-0.537,0.55-1.438,0.948-2.295,0.951V11.951z M10.302,25.609c-3.621,0-5.957-1.732-5.957-4.142c0-2.408,2.165-3.223,2.911-3.492
+                                                                        c1.421-0.479,3.25-0.545,3.555-0.545c0.338,0,0.52,0,0.766,0.034c2.574,1.838,3.706,2.757,3.706,4.479
+                                                                        c-0.002,2.073-1.736,3.665-4.982,3.649L10.302,25.609z"></path>
+                                                                    <polygon points="23.254,11.89 23.254,8.521 21.569,8.521 21.569,11.89 18.202,11.89 18.202,13.604 21.569,13.604 21.569,17.004
+                                                                        23.254,17.004 23.254,13.604 26.653,13.604 26.653,11.89">
+                                                                    </polygon>
+                                                                </g>
+                                                            </g>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="text">google+</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- User comments section -->
+                        <div class="comment-list clearfix" id="comments">
+                            <h2 class="comment-count">4 Readers Commented</h2>
+                            <a href="#addcomments" class="link-add-comment anchor" hidefocus="true">Join Discussion</a>
+
+                            <ol>
+                                <li class="comment">
+                                    <div class="comment-body boxed">
+                                        <div class="comment-avatar">
+                                            <div class="avatar"><img src="images/temp/avatar1.png" alt=""></div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <div class="comment-author clearfix">
+                                                <a href="#" class="link-author" hidefocus="true">Brad Pit</a>
+                                                <span class="comment-meta"><span class="comment-date">June 26, 2013</span> | <a href="#addcomments" class="link-reply anchor" hidefocus="true">Reply</a></span>
+                                            </div>
+                                            <div class="comment-entry">
+                                                William Bradley "Brad" Pitt is an American actor and film producer. Pitt has received four Academy Award nominations and five Golden Globe.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="comment">
+                                    <div class="comment-body boxed">
+                                        <div class="comment-avatar">
+                                            <div class="avatar"><img src="images/temp/avatar2.png" alt=""></div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <div class="comment-author clearfix">
+                                                <a href="#" class="link-author" hidefocus="true">Ari Gold</a>
+                                                <span class="comment-meta"><span class="comment-date">June 25, 2013</span> | <a href="#addcomments" class="link-reply anchor" hidefocus="true">Reply</a></span>
+                                            </div>
+                                            <div class="comment-entry">
+                                                Ari Gold is Vincent Chase's neurotic movie agent. He was an undergrad at Harvard University before earning his J.D./M.B.A. at the University of Michigan. In addition to reprising the role for the upcoming prequels of
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- comment reply -->
+                                    <ul class="children">
+                                        <li class="comment">
+                                            <div class="comment-body boxed">
+                                                <div class="comment-avatar">
+                                                    <div class="avatar"><img src="images/temp/avatar3.png" alt=""></div>
+                                                </div>
+                                                <div class="comment-text">
+                                                    <div class="comment-author clearfix">
+                                                        <a href="#" class="link-author" hidefocus="true">Elijah Wood</a>
+                                                        <span class="comment-meta"><span class="comment-date">June 24, 2013</span> | <a href="#addcomments" class="link-reply anchor" hidefocus="true">Reply</a></span>
+                                                    </div>
+                                                    <div class="comment-entry">
+                                                        Elijah Wood is an American actor best known for Frodo.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!--/ comment reply -->
+                                </li>
+
+                                <li class="comment">
+                                    <div class="comment-body boxed">
+                                        <div class="comment-avatar">
+                                            <div class="avatar"><img src="images/temp/avatar4.png" alt=""></div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <div class="comment-author clearfix">
+                                                <a href="#" class="link-author" hidefocus="true">Superman</a>
+                                                <span class="comment-meta"><span class="comment-date">June 23, 2013</span> | <a href="#addcomments" class="link-reply anchor" hidefocus="true">Reply</a></span>
+                                            </div>
+                                            <div class="comment-entry">
+                                                Superman is a fictional character, a comic book superhero who appears in comic books published by DC Comics.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                        
+                        <!-- Comment box -->
+                        <div class="section-title-wr">
+                            <h3 class="section-title left"><span>Comment box</span></h3>
+                        </div>
+
+                        <form class="form-light" role="form">
+                            <p>
+                                Improve this conversation by adding you comment :)
+                            </p>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group form-group-lg">
+                                        <label class="">First name</label>
+                                        <input type="text" class="form-control input-lg" placeholder="Your first name" hidefocus="true">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group form-group-lg">
+                                        <label class="">Last name</label>
+                                        <input type="text" class="form-control input-lg" placeholder="Your last name" hidefocus="true">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group form-group-lg">
+                                        <label class="">Email</label>
+                                        <input type="text" class="form-control input-lg" placeholder="Your name" hidefocus="true">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group form-group-lg">
+                                        <label class="">Website</label>
+                                        <input type="text" class="form-control input-lg" placeholder="name@example.com" hidefocus="true">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group form-group-lg">
+                                <label class="">Comment</label>
+                                <textarea class="form-control" rows="5" placeholder="Type you comment"></textarea>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-6">
+                                    <button class="btn btn-lg btn-alt btn-icon btn-icon-right btn-comment pull-right" hidefocus="true">
+                                        <span>Send comment</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-md-4">
+                        <!--  BLOG ARTICLES -->
+                        <div class="widget-recent mb-20">
+                            <div class="section-title-wr">
+                                <h3 class="section-title left"><span>From the blog</span></h3>
+                            </div>
+                            <div class="inner">
+                                <ul>
+                                    <li class="clearfix">
+                                        <a href="#" class="post-thumb" hidefocus="true"><img src="images/temp/thumb-6.jpg" alt=""></a>
+                                        <span class="comment-author"><a href="#" hidefocus="true">GECHI CHAN</a> commented</span>
+                                        <span class="comment-entry">Sed molestie augue sit amet leo consequat posuere. Estibu lum ante ipsum primis in faucibus</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="#" class="post-thumb" hidefocus="true"><img src="images/temp/thumb-7.jpg" alt=""></a>
+                                        <span class="comment-author"><a href="#" hidefocus="true">MAGGIE SAND</a> commented</span>
+                                        <span class="comment-entry">Estibu lum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="#" class="post-thumb" hidefocus="true"><img src="images/temp/thumb-8.jpg" alt=""></a>
+                                        <span class="comment-author"><a href="#" hidefocus="true">VINCE JAMIESON</a> commented</span>
+                                        <span class="comment-entry">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="#" class="post-thumb" hidefocus="true"><img src="images/temp/thumb-9.jpg" alt=""></a>
+                                        <span class="comment-author"><a href="#" hidefocus="true">KEIRA BENSON</a> commented</span>
+                                        <span class="comment-entry">Vivamus hendrerit arcu seditur erat molestie vehicula. Rediters auctor neque eu tellus</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="#" class="post-thumb" hidefocus="true"><img src="images/temp/thumb-10.jpg" alt=""></a>
+                                        <span class="comment-author"><a href="#" hidefocus="true">MICHAEL JONES</a> commented</span>
+                                        <span class="comment-entry">Rediters auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- CATEGORY NEWS -->
+                        <div class="section-title-wr">
+                            <h3 class="section-title left"><span>Category news</span></h3>
+                            <div class="aux-nav">
+                                <a href="#"> <i class="fa fa-paperclip"></i> See all articles</a>
+                            </div>
+                        </div>
+                        <div class="mb-20">
+                            <div class="wp-block article grid bb">
+                                <div class="article-image">
+                                    <img src="images/prv/magazine/magazine-small-1.jpg" alt="">
+                                </div>
+                                <span class="article-category">Fashion news</span>
+                                <h3 class="title">
+                                    <a href="">Fortitor Posuere & Praesent Metus Ins</a>
+                                </h3>
+                                <p>
+                                Laoreet dolore magna aliquam erat are esrseiiqetuer ipisci nibh euismod is tincidunt ut amat volutpat ut wisi enim ad minim.
+                                </p>
+                            </div>
+
+                            <div class="wp-block article list bb">
+                                <div class="article-image">
+                                    <img src="images/prv/magazine/magazine-small-2.jpg" alt="">
+                                </div>
+                                <div class="wp-block-body">
+                                    <h3 class="title">
+                                        <a href="">Lorem ipsum dolor sit ...</a>
+                                    </h3>
+                                    <p>
+                                    Laoreet dolore magna aliquam erat are esrseiiqetuer ipisci nibh euismod is tincidunt.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="wp-block article list">
+                                <div class="article-image">
+                                    <img src="images/prv/magazine/magazine-small-3.jpg" alt="">
+                                </div>
+                                <div class="wp-block-body">
+                                    <h3 class="title">
+                                        <a href="">Lorem ipsum dolor sit ...</a>
+                                    </h3>
+                                    <p>
+                                    Laoreet dolore magna aliquam erat are esrseiiqetuer ipisci nibh euismod is tincidunt.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TAB WIDGET -->
+                        <div class="tabs-framed">
+                            <ul class="tabs clearfix">
+                                <li class="active"><a href="#tab-1" data-toggle="tab">New</a></li>
+                                <li><a href="#tab-2" data-toggle="tab">Popular</a></li>
+                                <li><a href="#tab-3" data-toggle="tab">Reviews</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <!-- Tab 1 -->
+                                <div class="tab-pane fade in active" id="tab-1">
+                                    <div class="tab-body">
+                                        <div class="widget-recent">
+                                            <div class="inner">
+                                                <ul>
+                                                    <li class="clearfix">
+                                                        <a href="#" class="post-thumb" hidefocus="true"><img src="images/temp/thumb-6.jpg" alt=""></a>
+                                                        <span class="comment-author"><a href="#" hidefocus="true">GECHI CHAN</a> commented</span>
+                                                        <span class="comment-entry">Sed molestie augue sit amet leo consequat posuere. Estibu lum ante ipsum primis in faucibus</span>
+                                                    </li>
+                                                    <li class="clearfix">
+                                                        <a href="#" class="post-thumb" hidefocus="true"><img src="images/temp/thumb-7.jpg" alt=""></a>
+                                                        <span class="comment-author"><a href="#" hidefocus="true">MAGGIE SAND</a> commented</span>
+                                                        <span class="comment-entry">Estibu lum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</span>
+                                                    </li>
+                                                    <li class="clearfix">
+                                                        <a href="#" class="post-thumb" hidefocus="true"><img src="images/temp/thumb-8.jpg" alt=""></a>
+                                                        <span class="comment-author"><a href="#" hidefocus="true">VINCE JAMIESON</a> commented</span>
+                                                        <span class="comment-entry">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</span>
+                                                    </li>
+                                                    <li class="clearfix">
+                                                        <a href="#" class="post-thumb" hidefocus="true"><img src="images/temp/thumb-9.jpg" alt=""></a>
+                                                        <span class="comment-author"><a href="#" hidefocus="true">KEIRA BENSON</a> commented</span>
+                                                        <span class="comment-entry">Vivamus hendrerit arcu seditur erat molestie vehicula. Rediters auctor neque eu tellus</span>
+                                                    </li>
+                                                    <li class="clearfix">
+                                                        <a href="#" class="post-thumb" hidefocus="true"><img src="images/temp/thumb-10.jpg" alt=""></a>
+                                                        <span class="comment-author"><a href="#" hidefocus="true">MICHAEL JONES</a> commented</span>
+                                                        <span class="comment-entry">Rediters auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="tab-2">
+                                    <div class="tab-body">
+                                        <div class="widget-recent">
+                                            <div class="inner">
+                                                <ul>
+                                                    <li class="clearfix">
+                                                        <a href="#" class="post-thumb" hidefocus="true"><img src="images/temp/thumb-6.jpg" alt=""></a>
+                                                        <span class="comment-author"><a href="#" hidefocus="true">GECHI CHAN</a> commented</span>
+                                                        <span class="comment-entry">Sed molestie augue sit amet leo consequat posuere. Estibu lum ante ipsum primis in faucibus</span>
+                                                    </li>
+                                                    <li class="clearfix">
+                                                        <a href="#" class="post-thumb" hidefocus="true"><img src="images/temp/thumb-7.jpg" alt=""></a>
+                                                        <span class="comment-author"><a href="#" hidefocus="true">MAGGIE SAND</a> commented</span>
+                                                        <span class="comment-entry">Estibu lum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</span>
+                                                    </li>
+                                                    <li class="clearfix">
+                                                        <a href="#" class="post-thumb" hidefocus="true"><img src="images/temp/thumb-8.jpg" alt=""></a>
+                                                        <span class="comment-author"><a href="#" hidefocus="true">VINCE JAMIESON</a> commented</span>
+                                                        <span class="comment-entry">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</span>
+                                                    </li>
+                                                    <li class="clearfix">
+                                                        <a href="#" class="post-thumb" hidefocus="true"><img src="images/temp/thumb-9.jpg" alt=""></a>
+                                                        <span class="comment-author"><a href="#" hidefocus="true">KEIRA BENSON</a> commented</span>
+                                                        <span class="comment-entry">Vivamus hendrerit arcu seditur erat molestie vehicula. Rediters auctor neque eu tellus</span>
+                                                    </li>
+                                                    <li class="clearfix">
+                                                        <a href="#" class="post-thumb" hidefocus="true"><img src="images/temp/thumb-10.jpg" alt=""></a>
+                                                        <span class="comment-author"><a href="#" hidefocus="true">MICHAEL JONES</a> commented</span>
+                                                        <span class="comment-entry">Rediters auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tab 3 -->
+                                <div class="tab-pane fade" id="tab-3">
+                                    <div class="tab-body">
+                                        <ul class="featured">
+                                            <li>
+                                                <div class="cell cell-20">
+                                                    <img src="images/prv/magazine/magazine-square-2.jpg" alt="" class="pull-left">
+                                                </div>
+                                                <div class="cell">
+                                                    <div class="featured-content">
+                                                        <h3 class="title">
+                                                            <a href="#" hidefocus="true">Boomerang 2 - MultiPurpose Template</a>
+                                                        </h3>
+                                                        <div class="rating">
+                                                            <span class="star voted" rel="1"></span>
+                                                            <span class="star voted" rel="2"></span>
+                                                            <span class="star voted" rel="3"></span>
+                                                            <span class="star" rel="4"></span>
+                                                            <span class="star" rel="5"></span>
+                                                        </div>
+                                                        <p>
+                                                        Laoreet dolore magna aliquam erat are esrseiiqetuer ipisci nibh euismod is dolore magna aliquam esrseiiqetuer.
+                                                        </p>
+                                                    </div> 
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cell cell-20">
+                                                    <img src="images/prv/magazine/magazine-square-4.jpg" alt="" class="pull-left">
+                                                </div>
+                                                <div class="cell">
+                                                    <div class="featured-content">
+                                                        <h3 class="title">
+                                                            <a href="#" hidefocus="true">Boomerang 2 - MultiPurpose Template</a>
+                                                        </h3>
+                                                        <div class="rating">
+                                                            <span class="star voted" rel="1"></span>
+                                                            <span class="star voted" rel="2"></span>
+                                                            <span class="star voted" rel="3"></span>
+                                                            <span class="star voted" rel="4"></span>
+                                                            <span class="star" rel="5"></span>
+                                                        </div>
+                                                        <p>
+                                                        Laoreet dolore magna aliquam erat are esrseiiqetuer ipisci nibh euismod is dolore magna aliquam esrseiiqetuer.
+                                                        </p>
+                                                    </div> 
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cell cell-20">
+                                                    <img src="images/prv/magazine/magazine-square-7.jpg" alt="" class="pull-left">
+                                                </div>
+                                                <div class="cell">
+                                                    <div class="featured-content">
+                                                        <h3 class="title">
+                                                            <a href="#" hidefocus="true">Boomerang 2 - MultiPurpose Template</a>
+                                                        </h3>
+                                                        <div class="rating">
+                                                            <span class="star voted" rel="1"></span>
+                                                            <span class="star voted" rel="2"></span>
+                                                            <span class="star voted" rel="3"></span>
+                                                            <span class="star voted" rel="4"></span>
+                                                            <span class="star voted" rel="5"></span>
+                                                        </div>
+                                                        <p>
+                                                        Laoreet dolore magna aliquam erat are esrseiiqetuer ipisci nibh euismod is dolore magna aliquam esrseiiqetuer.
+                                                        </p>
+                                                    </div> 
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="col">
+                       <h4>Contact us</h4>
+                       <ul>
+                            <li>5th Avenue, New York - United States</li>
+                            <li>Phone: +10 724 1234 567 | Fax: +10 724 1234 567 </li>
+                            <li>Email: <a href="mailto:hello@example.com" title="Email Us">hello@example.com</a></li>
+                            <li>Skype: <a href="skype:my.business?call" title="Skype us">my-business</a></li>
+                            <li>Creating great templates is our passion</li>
+                        </ul>
+                     </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="col">
+                        <h4>Mailing list</h4>
+                        <p>Sign up if you would like to receive occasional treats from us.</p>
+                        <form class="form-horizontal form-light">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Your email address...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-base" type="button">Go!</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="col col-social-icons">
+                        <h4>Follow us</h4>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-skype"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#"><i class="fa fa-flickr"></i></a>
+                    </div>
+                </div>
+
+                 <div class="col-md-3">
+                    <div class="col">
+                        <h4>About us</h4>
+                        <p class="no-margin">
+                        Boomerang MultiPurpose Template is a multi-solution product made with simplicity in mind so you can benefit as much as possible from it.
+                        <br><br>
+                        <a href="#" class="btn btn-block btn-base btn-icon fa-check"><span>Try it now</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <div class="row">
+                <div class="col-lg-9 copyright">
+                    2014 © Web Pixels. All rights reserved.
+                    <a href="#">Terms and conditions</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="http://www.webpixels.ro" title="Made with love by Web Pixels" target="_blank" class="">
+                        <img src="images/webpixels-footer-logo.png" alt="Web Pixels - Designing Forward | Logo" class="pull-right">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Essentials -->
+<script src="js/modernizr.custom.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script src="js/jquery.metadata.js"></script>
+<script src="js/jquery.hoverup.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/jquery.stellar.js"></script>
+
+<!-- Boomerang mobile nav - Optional  -->
+<script src="assets/responsive-mobile-nav/js/jquery.dlmenu.js"></script>
+<script src="assets/responsive-mobile-nav/js/jquery.dlmenu.autofill.js"></script>
+
+<!-- Forms -->
+<script src="assets/ui-kit/js/jquery.powerful-placeholder.min.js"></script> 
+<script src="assets/ui-kit/js/cusel.min.js"></script>
+<script src="assets/sky-forms/js/jquery.form.min.js"></script>
+<script src="assets/sky-forms/js/jquery.validate.min.js"></script>
+<script src="assets/sky-forms/js/jquery.maskedinput.min.js"></script>
+<script src="assets/sky-forms/js/jquery.modal.js"></script>
+
+<!-- Assets -->
+<script src="assets/hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+<script src="assets/page-scroller/jquery.ui.totop.min.js"></script>
+<script src="assets/mixitup/jquery.mixitup.js"></script>
+<script src="assets/mixitup/jquery.mixitup.init.js"></script>
+<script src="assets/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script src="assets/waypoints/waypoints.min.js"></script>
+<script src="assets/milestone-counter/jquery.countTo.js"></script>
+<script src="assets/easy-pie-chart/js/jquery.easypiechart.js"></script>
+<script src="assets/social-buttons/js/rrssb.min.js"></script>
+<script src="assets/nouislider/js/jquery.nouislider.min.js"></script>
+<script src="assets/owl-carousel/owl.carousel.js"></script>
+<script src="assets/bootstrap/js/tooltip.js"></script>
+<script src="assets/bootstrap/js/popover.js"></script>
+
+<!-- Sripts for individual pages, depending on what plug-ins are used -->
+
+<!-- Boomerang App JS -->
+<script src="js/wp.app.js"></script>
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!-- Temp -- You can remove this once you started to work on your project -->
+<script src="js/jquery.cookie.js"></script>
+<script src="js/wp.switcher.js"></script>
+<script type="text/javascript" src="js/wp.ga.js"></script>
+
+
+</body>
+</html>
